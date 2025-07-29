@@ -3,6 +3,18 @@
 This document outlines a robust, scalable folder structure for enterprise-level NestJS applications. It supports best practices, domain-driven design (DDD), third-party integrations, environment management, and advanced tooling.
 
 ---
+```
+npm i cookie-parser express-session bcrypt --loglevel=silly
+```
+```
+npm i --save @nestjs/swagger @nestjs/axios axios @nestjs-modules/mailer nodemailer @nestjs/jwt @nestjs/passport passport passport-local @nestjs/websockets @nestjs/platform-socket.io class-validator class-transformer @nestjs/typeorm typeorm pg @nestjs/config
+```
+```
+npm i --save-dev @types/passport-local @types/nodemailer
+```
+```
+npm i -D @types/cookie-parser @types/multer @types/express-session @types/bcrypt
+```
 
 ## 📦 Project Structure
 
