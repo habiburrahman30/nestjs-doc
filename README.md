@@ -120,3 +120,78 @@ README.md
 ---
 
 Let me know if you need a code scaffold or starter repo based on this!
+
+## 📦 Project Structure 2
+
+```bash
+nestjs-pro/
+├── src/
+│   ├── app.module.ts                # Root module
+│   ├── main.ts                      # Entry point
+│   ├── config/                      # Centralized configuration files
+│   │   ├── app.config.ts
+│   │   ├── database.config.ts
+│   │   └── ...
+│   ├── common/                      # Common/shared utils and constants
+│   │   ├── constants/
+│   │   ├── decorators/
+│   │   ├── filters/
+│   │   ├── guards/
+│   │   ├── interceptors/
+│   │   └── utils/
+│   ├── modules/                     # Feature modules
+│   │   ├── auth/
+│   │   │   ├── dto/
+│   │   │   ├── entities/
+│   │   │   ├── auth.controller.ts
+│   │   │   ├── auth.service.ts
+│   │   │   └── auth.module.ts
+│   │   ├── users/
+│   │   ├── addresses/
+│   │   └── ...
+│   ├── jobs/                        # Background tasks
+│   │   ├── queues/                  # BullMQ or Redis jobs
+│   │   │   ├── email.queue.ts
+│   │   │   └── report.queue.ts
+│   │   ├── cron/                    # Scheduled jobs
+│   │   │   ├── cleanup.cron.ts
+│   │   │   └── analytics.cron.ts
+│   │   ├── workers/                 # Long-running or async workers
+│   │   │   ├── pdf.worker.ts
+│   │   │   └── ...
+│   │   └── jobs.module.ts
+│   ├── events/                      # Event-driven architecture
+│   │   ├── handlers/
+│   │   ├── emitters/
+│   │   └── events.module.ts
+│   ├── notifications/              # Notification channels
+│   │   ├── mail/
+│   │   ├── sms/
+│   │   ├── push/
+│   │   └── notifications.module.ts
+│   ├── graphql/                    # Optional: GraphQL setup
+│   │   ├── resolvers/
+│   │   ├── schemas/
+│   │   └── graphql.module.ts
+│   ├── logging/                    # Winston or Pino logger config
+│   │   └── logger.service.ts
+│   ├── metrics/                    # Prometheus / monitoring
+│   │   └── metrics.module.ts
+│   ├── health/                     # Health checks & readiness
+│   │   └── health.controller.ts
+│   ├── webhooks/                   # Webhook listeners
+│   │   ├── payment.webhook.ts
+│   │   └── ...
+│   ├── schedulers/                 # Scheduler-based jobs
+│   │   └── sync.scheduler.ts
+│   └── main.ts
+├── test/                            # Unit and e2e tests
+│   ├── auth.e2e-spec.ts
+│   ├── users.service.spec.ts
+│   └── ...
+├── .env                             # Environment variables
+├── nest-cli.json
+├── tsconfig.json
+├── package.json
+└── README.md
+```
