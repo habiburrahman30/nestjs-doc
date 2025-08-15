@@ -16,10 +16,10 @@ $ sudo systemctl start postgresql
 
 # Set the postgres Password
 
-1. Switch to postgres system user (Linux/macOS)
+# Switch to postgres system user (Linux/macOS)
 $ sudo -u postgres psql
 
-2. Inside psql:
+# Inside psql:
 $ ALTER USER postgres PASSWORD 'your_new_password';
 
 ```
