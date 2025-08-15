@@ -3,6 +3,26 @@
 This document outlines a robust, scalable folder structure for enterprise-level NestJS applications. It supports best practices, domain-driven design (DDD), third-party integrations, environment management, and advanced tooling.
 
 ---
+## Install postgresql
+
+```bash
+# Install PostgreSQL (Server + Client Tools)
+$ sudo apt update
+$ sudo apt install postgresql postgresql-contrib
+
+# Start PostgreSQL Service
+$ sudo systemctl enable postgresql
+$ sudo systemctl start postgresql
+
+# Set the postgres Password
+
+1. Switch to postgres system user (Linux/macOS)
+$ sudo -u postgres psql
+
+2. Inside psql:
+$ ALTER USER postgres PASSWORD 'your_new_password';
+
+```
 ```
 npm i cookie-parser express-session bcrypt --loglevel=silly
 ```
